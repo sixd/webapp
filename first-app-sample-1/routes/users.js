@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function (req, res, next) {
   // 修改值为'zhangsan,lisi,wangermazi'
   //res.send('respond with a resource');
-  res.send('zhangsan, lisi, wangermazi');
+  res.send(' lisi, wangermazi');
 });
 
 module.exports = router;

@@ -23,7 +23,9 @@ router.get('/posts/show', function(req, res, next) {
   var id = req.query.id;
 
   PostModel.findOne({ _id: id }, function(err, post) {
+    console.log(post.content);;
     post.mkContent = marked(post.content);
+    console.log(post.mkContent);
     res.render('show', { post });
   });
 });

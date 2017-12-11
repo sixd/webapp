@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-
-mongoose.connect('mongodb://localhost:32785/firstapp', {
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://116.62.69.26:27017/webappdb', {
   useMongoClient: true
 });
